@@ -177,7 +177,6 @@ df_train = pd.read_csv(r"train.csv", sep = ",", parse_dates = ["timestamp"])
 series_time = df_train.groupby(["timestamp"])["price_doc"].mean()
 
 # Set "year_month" as index
-
 print(series_time)
 
 # Create an autocorrelation plot
